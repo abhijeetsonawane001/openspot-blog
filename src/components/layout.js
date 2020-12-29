@@ -8,27 +8,30 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-3xl xl:px-0">
+        <div className="flex justify-between items-center py-10">
+          <Link to="/">
+            <h1 class="text-4xl font-semibold tracking-tighter text-gray-900">openspot<span class="text-xl tracking-tighter ml-1 text-gray-500 uppercase">blog</span></h1>
+          </Link>
+        </div>
+      </div>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-3xl xl:px-0">
+        <div className="flex justify-between items-center py-10">
+          <Link to="/">
+            <h1 className="text-4xl font-semibold tracking-tighter text-gray-900">openspot<span className="text-xl tracking-tighter ml-1 text-gray-500 uppercase">blog</span></h1>
+          </Link>
+        </div>
+      </div>
     )
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+    <div className="page__wrapper antialiased" data-is-root-path={isRootPath}>
+      <header className="page__header">{header}</header>
+      <main className="content__wrapper">{children}</main>
     </div>
   )
 }
