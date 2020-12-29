@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/openspot-blog",
   siteMetadata: {
     title: `openspot blog`,
     author: {
