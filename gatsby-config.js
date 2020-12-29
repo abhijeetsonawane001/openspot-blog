@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/openspot-blog",
   siteMetadata: {
     title: `openspot blog`,
     author: {
@@ -6,7 +7,7 @@ module.exports = {
       summary: `Software Engineer`,
     },
     description: `Programming tutorials`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: ``,
     social: {
       twitter: `abhijeet_s001`,
     },

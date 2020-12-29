@@ -57,4 +57,9 @@
   .content__wrapper .blog-post-nav a {
     @apply font-semibold;
   }
+
+  /* 404 */
+  .content__wrapper > h1 {
+    @apply text-4xl font-bold;
+  }
 }
