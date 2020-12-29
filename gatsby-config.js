@@ -6,7 +6,7 @@ module.exports = {
       summary: `Software Engineer`,
     },
     description: `Programming tutorials`,
-    siteUrl: ``,
+    siteUrl: `https://openspot.in/`,
     social: {
       twitter: `abhijeet_s001`,
     },
